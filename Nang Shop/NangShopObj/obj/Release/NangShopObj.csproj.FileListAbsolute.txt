@@ -1,0 +1,4 @@
+E:\Working Tem\Nang Shop\Nang Shop\NangShopObj\bin\Release\NangShopObj.dll
+E:\Working Tem\Nang Shop\Nang Shop\NangShopObj\bin\Release\NangShopObj.pdb
+E:\Working Tem\Nang Shop\Nang Shop\NangShopObj\obj\Release\NangShopObj.dll
+E:\Working Tem\Nang Shop\Nang Shop\NangShopObj\obj\Release\NangShopObj.pdb

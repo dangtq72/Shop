@@ -1,0 +1,70 @@
+E:\Working\OneKN\Program\AvalonDock\bin\Debug\AvalonDock.dll
+E:\Working\OneKN\Program\AvalonDock\bin\Debug\AvalonDock.pdb
+E:\Working\OneKN\Program\AvalonDock\bin\Debug\log4net.dll
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Themes\ETF.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\AvalonDock_MarkupCompile.cache
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\AvalonDock_MarkupCompile.lref
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\Brushes.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\Common.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\DockablePaneStyles.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\DockingManagerStyles.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\DocumentNavigatorWindowStyle.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\DocumentPaneStyles.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\FloatingWindowStyle.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\ManagedContentStyle.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\NavigatorWindowStyle.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Resources\OverlayWindowStyle.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\Themes\generic.baml
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\AvalonDock.g.resources
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\AvalonDock.Properties.Resources.resources
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\AvalonDock.csproj.GenerateResource.Cache
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\AvalonDock.dll
+E:\Working\OneKN\Program\AvalonDock\obj\Debug\AvalonDock.pdb
+F:\Working Tem\Nang Shop\AvalonDock\bin\Debug\AvalonDock.dll
+F:\Working Tem\Nang Shop\AvalonDock\bin\Debug\AvalonDock.pdb
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.csprojResolveAssemblyReference.cache
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Themes\ETF.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock_MarkupCompile.cache
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock_MarkupCompile.lref
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\Brushes.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\Common.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\DockablePaneStyles.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\DockingManagerStyles.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\DocumentNavigatorWindowStyle.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\DocumentPaneStyles.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\FloatingWindowStyle.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\ManagedContentStyle.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\NavigatorWindowStyle.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\OverlayWindowStyle.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Themes\generic.baml
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.g.resources
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.Properties.Resources.resources
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.csproj.GenerateResource.Cache
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.dll
+F:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.pdb
+E:\Working Tem\Nang Shop\AvalonDock\bin\Debug\AvalonDock.dll
+E:\Working Tem\Nang Shop\AvalonDock\bin\Debug\AvalonDock.pdb
+E:\Working Tem\Nang Shop\AvalonDock\bin\Debug\log4net.dll
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.csprojResolveAssemblyReference.cache
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Themes\ETF.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock_MarkupCompile.cache
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock_MarkupCompile.lref
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\Brushes.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\Common.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\DockablePaneStyles.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\DockingManagerStyles.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\DocumentNavigatorWindowStyle.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\DocumentPaneStyles.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\FloatingWindowStyle.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\ManagedContentStyle.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\NavigatorWindowStyle.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Resources\OverlayWindowStyle.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\Themes\generic.baml
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.g.resources
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.Properties.Resources.resources
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.csproj.GenerateResource.Cache
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.dll
+E:\Working Tem\Nang Shop\AvalonDock\obj\Debug\AvalonDock.pdb

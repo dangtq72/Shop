@@ -1,0 +1,169 @@
+﻿<Window x:Class="NangShop.Control.Frm_NhapHang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        xmlns:abc="clr-namespace:NangShop.Control"
+        
+        Title="Nhập sản phẩm" Width="800"  
+        WindowStartupLocation="CenterScreen"
+        ShowInTaskbar="False" Style ="{DynamicResource WindowFormStyle}"
+        ResizeMode="NoResize" SizeToContent="Height"
+        Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                
+                <RowDefinition Height="50"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label Content="Số HD:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,3,0" VerticalAlignment="Center" />
+            
+            <Label Content="Tên sản phẩm:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Margin="0,0,3,0" VerticalAlignment="Center" />
+            <Label Content="Loại SP:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            <Label Content="Số dây áo:" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            <Label Content="Số áo/dây:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            <Label Content="Ngày nhập:" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            <Label Content="Size từ:" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            <Label Content="Giá nhập:" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            <Label Content="Tổng số tiền:" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+
+            <Label Content="Tỷ lệ bán lẻ:" Grid.Column="0" Grid.Row="9" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            <Label Content="Tỷ lệ bán buôn:" Grid.Column="0" Grid.Row="10" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            
+            <Label Content="Ghi chú:" Grid.Column="0" Grid.Row="11" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+
+            
+            <CheckBox Content="Hàng xuất dư" Visibility="Collapsed" Name="ckb_Is_XuatDu" Grid.Column="1" Margin="250,0,15,0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Checked="ckb_Is_XuatDu_Checked" Unchecked="ckb_Is_XuatDu_UnChecked"/>
+
+            <TextBox Name="txtSoHoaDon" Grid.Column="1" Grid.Row="0"  Margin="0,0,15,0" Width="220" VerticalAlignment="Center" HorizontalAlignment="Left" IsEnabled="False"/>
+            
+            <TextBox Name="txtProduct_Name" Grid.Column="1" Grid.Row="1"  Margin="0,0,15,0" VerticalAlignment="Center" HorizontalAlignment="Stretch" TabIndex="1"/>
+            <Label Content="Mã Sản phẩm:" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="120,0,3,0"   VerticalAlignment="Center" />
+            <TextBox Name="txtProductCode" Grid.Row="2" Grid.Column="1"  Width="200" Margin="220,0,15,0" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="3" IsEnabled="True" />
+
+
+            <Label Content="Nhà buôn:" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Margin="140,0,3,0"   VerticalAlignment="Center" />
+            <ComboBox Name="cboSupplier" Grid.Row="3" Grid.Column="1"  Width="200" Margin="220,0,15,0" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="5" SelectedIndex="0" />
+            
+            <ComboBox Name="cboItem_Type" Grid.Row="2" Grid.Column="1"  Width="100" Margin="0,0,15,0" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="2" SelectedIndex="0" SelectionChanged="cboItem_Type_SelectionChanged"/>
+
+            <TextBox Name="txtCount_J" Grid.Column="1" Grid.Row="3"  Width="100" Margin="0,0,15,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextChanged="txtCount_J_TextChanged" TabIndex="4"/>
+            <TextBox Name="txtCount" Grid.Column="1" Grid.Row="4"  Width="100" Margin="0,0,15,0" VerticalAlignment="Center" HorizontalAlignment="Left" TextChanged="txtCount_TextChanged" TabIndex="6"/>
+
+            <Label Content="Đơn vị:" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" Margin="140,0,3,0"   VerticalAlignment="Center" />
+            <ComboBox Name="cboUnit" Grid.Row="4" Grid.Column="1"  Width="200" Margin="220,0,15,0" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="7" SelectedIndex="0" />
+
+
+            <DatePicker Name="dpReceiveDate" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Width="100" HorizontalAlignment="Left" TabIndex="8"/>
+
+            <TextBox Name="txtFromAge" Text="1" Grid.Column="1" Grid.Row="6"  Margin="0,0,15,0" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="9"  TextChanged="txtFromAge_TextChanged"/>
+            <Label Content="tuổi đến" Grid.Column="1" Grid.Row="6" Margin="80,0,15,0" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+
+            <TextBox Name="txtToAge" Text="10" Grid.Column="1" Grid.Row="6"  Margin="150,0,15,0" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="10"  TextChanged="txtToAge_TextChanged"/>
+            <Label Content="tuổi" Grid.Column="1" Grid.Row="6" Margin="225,0,15,0" HorizontalAlignment="Left"  VerticalAlignment="Center" />
+
+            <TextBox Name="txtReceive_Price" Grid.Column="1" Grid.Row="7"  Margin="0,0,15,0" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="11" TextChanged="txtReceive_Price_TextChanged"/>
+            <Label Content="Tiền ship:" Grid.Column="1" Grid.Row="7" HorizontalAlignment="Left" Margin="170,0,3,0"   VerticalAlignment="Center" />
+            <TextBox Name="txtShip_Price" Grid.Column="1" Grid.Row="7"  Margin="250,0,15,0" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="12" TextChanged="txtShip_Price_TextChanged"/>
+            
+            <TextBox Name="txtTotal_Price" Grid.Column="1" Grid.Row="8"   Margin="0,0,15,0" VerticalAlignment="Center" Width="150" HorizontalAlignment="Left" TabIndex="13" TextChanged="txtTotal_Price_TextChanged"/>
+
+
+            <TextBox Name="txtPerBanLe" Grid.Column="1" Text="1.2"  Grid.Row="9"  Margin="0,0,15,0" Width="50" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="14" TextChanged="txtPerBanLe_TextChanged"/>
+            <Label Content="Giá bán lẻ:" Grid.Column="1" Grid.Row="9" Margin="60,0,15,0" HorizontalAlignment="Left"  VerticalAlignment="Center" />
+            <TextBox Name="txtPrice_BanLe" Grid.Column="1" Grid.Row="9"  Margin="150,0,15,0" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="15" TextChanged="txtPrice_BanLe_TextChanged"/>
+
+
+            <TextBox Name="txtPerBanBuon" Text="1.15" Grid.Column="1" Grid.Row="10"  Margin="0,0,15,0" Width="50" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="16" TextChanged="txtPerBanBuon_TextChanged"/>
+            <Label Content="Giá bán buôn:" Grid.Column="1" Grid.Row="10" Margin="60,0,15,0" HorizontalAlignment="Left"  VerticalAlignment="Center" />
+            <TextBox Name="txtPrice_BanBuon" Grid.Column="1" Grid.Row="10"  Margin="150,0,15,0" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="17" TextChanged="txtPrice_BanBuon_TextChanged"/>
+
+            <TextBox Name="txtNote" Grid.Column="1" Grid.Row="11"  Margin="0,0,15,0" Height="42" Width="500" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="16" TextChanged="txtReceive_Price_TextChanged"/>
+            <Button Content="Thêm chi tiết Ri SP" Grid.Column="1" Grid.Row="11"  Margin="510,0,15,0" Width="100" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="18"  Name="btnAuto" Click="btnAuto_Click"/>
+        </Grid>
+
+        <GroupBox Header="Chi tiết sản phẩm" Grid.Row="1">
+            <Grid>
+                <Grid.Resources>
+                    <ObjectDataProvider x:Key="ColorDataProvider" ObjectType="{x:Type abc:Color_Member}" MethodName="Get_Color" />
+                </Grid.Resources>
+
+                <DataGrid Name="dgrProduct_XuatDu" LoadingRow="dgrProduct_LoadingRow" PreviewKeyDown="dgrProduct_PreviewKeyDown" Visibility="Collapsed" 
+                  CanUserAddRows="False" AutoGenerateColumns="False"  >
+                    <DataGrid.Columns>
+
+                        <!--<DataGridTemplateColumn Width="30">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Button Click="btnDel_Click" Name="btnDel" Width="30"  HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <Button.Background >
+                                                <ImageBrush ImageSource="/NangShop;component/Themes/Images/resizedimage.png"/>
+                                            </Button.Background>
+                                        </Button>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>-->
+
+                        <DataGridTextColumn Binding="{Binding Name}" IsReadOnly="True" Header="Tên sản phẩm" Width="200" ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <!--Color-->
+                        <DataGridComboBoxColumn SelectedValueBinding="{Binding Color_Id}" Width="120" ElementStyle="{StaticResource CenterAlignStyle}"                                         
+                                           SelectedValuePath="Color_Id" DisplayMemberPath="Color_Name" 
+                                           ItemsSource="{Binding Source={StaticResource ColorDataProvider}}" Header="Màu"/>
+
+                        <DataGridTextColumn Binding="{Binding Size, Mode=TwoWay}" IsReadOnly="True" Header="Size" Width="100"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <!--<DataGridTextColumn Binding="{Binding Description, Mode=TwoWay}" IsReadOnly="True" Header="Mô tả" Width="*"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>-->
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <DataGrid Name="dgrProduct_VietNam" LoadingRow="dgrProduct_LoadingRow" PreviewKeyDown="dgrProduct_PreviewKeyDown" 
+                  CanUserAddRows="False" AutoGenerateColumns="False" >
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Binding="{Binding Name}" IsReadOnly="True" Header="Ri" Width="200" ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        
+                        <!--Color-->
+                        <!--<DataGridComboBoxColumn SelectedValueBinding="{Binding Color_Id}" Width="120" ElementStyle="{StaticResource CenterAlignStyle}"                                         
+                                           SelectedValuePath="Color_Id" DisplayMemberPath="Color_Name" 
+                                           ItemsSource="{Binding Source={StaticResource ColorDataProvider}}" Header="Màu"/>-->
+
+                        <DataGridTextColumn Binding="{Binding Color_Name}" IsReadOnly="True" Header="Màu" Width="100" ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <DataGridTextColumn Binding="{Binding Size}" IsReadOnly="True" Header="Size" Width="100"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <DataGridTextColumn Binding="{Binding Total_Count}" IsReadOnly="True" Header="Số lượng" Width="100"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+
+        <Grid Grid.Row="2" Margin="0" Style="{DynamicResource BottomGrid}">
+            <StackPanel Orientation="Horizontal" Name="grdBtn" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Content="Chấp nhận" Margin="0,0,0,0" Name="btnAccept" Click="btnAccept_Click" Width="75" TabIndex="19"/>
+                <Button Content="Hủy bỏ" Margin="5,0,0,0" Name="btnCancel" Click="btnCancel_Click" Width="75" TabIndex="20"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
+
+    

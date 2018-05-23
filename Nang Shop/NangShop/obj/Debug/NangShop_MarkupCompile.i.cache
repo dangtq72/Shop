@@ -1,0 +1,20 @@
+﻿NangShop
+
+
+winexe
+C#
+.cs
+D:\Working\Nang Shop\Nang Shop\NangShop\obj\Debug\
+NangShop
+none
+false
+DEBUG;TRACE
+D:\Working\Nang Shop\Nang Shop\NangShop\App.xaml
+72374397011
+4-725087614
+65838113900
+33-266914838
+Common\Us_Grid_Product.xaml;Control\Alert\Check_Connection.xaml;Control\Alert\frmLogOn.xaml;Control\Alert\frmNoteBox.xaml;Control\Alert\frmSuggest.xaml;Control\Created\frmCreate_Customer.xaml;Control\Created\FrmCreateSale_Ban_Buon_Header.xaml;Control\Created\frmCreate_Item.xaml;Control\Created\FrmCreateSale_Header.xaml;Control\Created\frmCreate_Category.xaml;Control\Created\frmCreate_Color.xaml;Control\Created\frmCreate_Supplier.xaml;Control\Created\frmCreate_User.xaml;Control\Created\Frm_NhapHang.xaml;Control\Created\Group_User.xaml;Control\Created\Update_Pass.xaml;Control\Search\frmSearch_Customer.xaml;Control\Update\Change_HeaderProduct_Detail.xaml;Control\Update\frmRepayProduct.xaml;Control\Update\Group_User_Update.xaml;Control\User\Functions_Display.xaml;Control\User\GroupUser_Right.xaml;Control\User\Group_User_Display.xaml;Control\User\User_Rights.xaml;Control\View\GroupUser_View.xaml;Control\View\View_Customer_Product.xaml;Control\View\View_HeaderProduct_Detail.xaml;Control\View\View_Product_Detail.xaml;CustomUserControl\ComboBoxSearch.xaml;CustomUserControl\CustomPasswordBox.xaml;CustomUserControl\LoadControl.xaml;Display\Color_Display.xaml;Control\Search\frmSearchProduct.xaml;Display\Category_Display.xaml;Display\HoaDon_BanBuon_Display.xaml;Display\Customer_Display.xaml;Display\HoaDon_Display.xaml;Display\Product_Display.xaml;Display\Supplier_Display.xaml;Display\UserDisplay.xaml;MainWindow.xaml;Themes\Border.xaml;Themes\Button.xaml;Themes\Calendar.xaml;Themes\CheckBox.xaml;Themes\Combine.xaml;Themes\ComboBox.xaml;Themes\DataGrid.xaml;Themes\DatePicker.xaml;Themes\DockTheme.xaml;Themes\Expander.xaml;Themes\Generic.xaml;Themes\Grid.xaml;Themes\GroupBox.xaml;Themes\Image.xaml;Themes\Label.xaml;Themes\ListBox.xaml;Themes\ListView.xaml;Themes\MainWindowETF.xaml;Themes\NoteBox.xaml;Themes\PasswordBox.xaml;Themes\ProgressBar.xaml;Themes\RadioButton.xaml;Themes\Ribbon.xaml;Themes\ScrollViewer.xaml;Themes\StatusBar.xaml;Themes\TabControl.xaml;Themes\Textbox.xaml;Themes\ToggleButton.xaml;Themes\TreeView.xaml;Themes\WindowStyle.xaml;Themes\WindowStyle_EX.xaml;
+
+False
+

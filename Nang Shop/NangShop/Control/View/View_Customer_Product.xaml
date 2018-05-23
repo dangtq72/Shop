@@ -1,0 +1,44 @@
+﻿<Window x:Class="NangShop.Control.View.View_Customer_Product"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Thông tin khách mua hàng" Width="900"  
+        WindowStartupLocation="CenterScreen"
+        ShowInTaskbar="False" Style ="{DynamicResource WindowFormStyle}"
+        ResizeMode="NoResize" SizeToContent="Height"
+        xmlns:abc="clr-namespace:NangShop.Control"
+        Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Chi tiết sản phẩm" Grid.Row="0">
+            <Grid>
+                <Grid.Resources>
+                    <ObjectDataProvider x:Key="ColorDataProvider" ObjectType="{x:Type abc:Color_Member}" MethodName="Get_Color" />
+                </Grid.Resources>
+
+                <DataGrid Name="dgrProduct_Detail" LoadingRow="dgrProduct_Detail_LoadingRow" PreviewKeyDown="dgrProduct_Detail_PreviewKeyDown" 
+                  CanUserAddRows="False" AutoGenerateColumns="False" >
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Binding="{Binding SoHoaDon}" IsReadOnly="True" Header="Số hóa đơn" Width="170" ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <DataGridTextColumn Binding="{Binding Name}" IsReadOnly="True" Header="Tên SP" Width="220"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <DataGridTextColumn Binding="{Binding Count}" IsReadOnly="True" Header="Số lượng" Width="100"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+
+                        <DataGridTextColumn Binding="{Binding Sale_Date,StringFormat=dd/MM/yyyy}" IsReadOnly="True" Header="Ngày mua hàng" Width="120" ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <DataGridTextColumn Binding="{Binding Total_Amount,StringFormat=#\,##0}" IsReadOnly="True" Header="Số tiền/Hóa đơn" Width="150"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+
+        <Grid Grid.Row="1" Margin="0" Style="{DynamicResource BottomGrid}">
+            <StackPanel Orientation="Horizontal" Name="grdBtn" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Content="Thoát" Margin="5,0,0,0" Name="btnCancel" Click="btnCancel_Click" Width="75" TabIndex="19"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

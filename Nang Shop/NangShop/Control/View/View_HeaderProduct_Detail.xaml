@@ -1,0 +1,73 @@
+﻿<Window x:Class="NangShop.Control.View.View_HeaderProduct_Detail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        Title="Thông tin hóa đơn" Width="800"
+        ShowInTaskbar="False" Style ="{DynamicResource WindowFormStyle}"
+        ResizeMode="NoResize" SizeToContent="Height"
+        xmlns:abc="clr-namespace:NangShop.Control"
+        Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition />
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+
+        <Grid  Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="105" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="105" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="105" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Content="Tên khách hàng:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,3,0" VerticalAlignment="Center" />
+            <TextBox Name="txtCustomer_Name" Grid.Column="1" Grid.Row="0" Width="145" VerticalAlignment="Center" HorizontalAlignment="Left" IsEnabled="False"/>
+
+            <Label Content="Ngày mua hàng" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Margin="0,0,3,0" VerticalAlignment="Center" />
+            <TextBox Name="txtSaleDate" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Width="145" HorizontalAlignment="Left" IsEnabled="False"/>
+
+            <Label Content="Chiết khấu:" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            <TextBox Name="txtPerDiscount" Grid.Column="3" Grid.Row="0" Width="145" VerticalAlignment="Center" HorizontalAlignment="Left"  TextChanged="txt_TextChanged" IsEnabled="False"/>
+
+            <Label Content="Khuyến mãi:" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Right" Margin="0,0,3,0"   VerticalAlignment="Center" />
+            <TextBox Name="txtDiscount" Grid.Column="3" Grid.Row="1" Width="145" VerticalAlignment="Center" HorizontalAlignment="Left" TextChanged="txt_TextChanged" IsEnabled="False"/>
+
+            <Label Content="Số tiền TT" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,3,0" VerticalAlignment="Center" />
+            <TextBox Name="txtPayPrice" Grid.Column="5" Grid.Row="0" VerticalAlignment="Center" Width="145" HorizontalAlignment="Left"  TextChanged="txt_TextChanged" IsEnabled="False"/>
+
+            <Label Content="Ship Hàng" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Right" Margin="0,0,3,0" VerticalAlignment="Center" />
+            <TextBox Name="txtShipPrice" Grid.Column="5" Grid.Row="1" VerticalAlignment="Center" Width="145" HorizontalAlignment="Left"  TextChanged="txt_TextChanged" IsEnabled="False"/>
+        </Grid>
+
+        <GroupBox Header="Chi tiết đơn hàng" Grid.Row="1">
+            <Grid>
+                <DataGrid Name="dgrProduct_Detail" LoadingRow="dgrProduct_Detail_LoadingRow" PreviewKeyDown="dgrProduct_Detail_PreviewKeyDown" 
+                  CanUserAddRows="False" AutoGenerateColumns="False" Height="200">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Name}" IsReadOnly="True" Header="Tên sản phẩm" Width="250" ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <DataGridTextColumn Binding="{Binding Count_Sale_By_Header,StringFormat=#\,##0}" IsReadOnly="True" Header="Số lượng" Width="90"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <DataGridTextColumn Binding="{Binding DonGia_By_Type,StringFormat=#\,##0}" IsReadOnly="True" Header="Đơn giá" Width="120"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                        <DataGridTextColumn Binding="{Binding Total_Price,StringFormat=#\,##0}" IsReadOnly="True" Header="Thành tiền" Width="150"  ElementStyle="{StaticResource CenterAlignStyle}" CellStyle="{DynamicResource TextCell}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+
+        <Grid Grid.Row="2" Margin="0" Style="{DynamicResource BottomGrid}">
+            <StackPanel Orientation="Horizontal" Name="grdBtn" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Content="Thoát" Margin="5,0,0,0" Name="btnCancel" Click="btnCancel_Click" Width="75" TabIndex="5"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

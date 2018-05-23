@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EEFD801-5BDC-4DD2-91CE-8E195B2198C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NangShop_DataControl</RootNamespace>
+    <AssemblyName>NangShop_DataControl</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\Working\General\dll\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Working\General\dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SendFiles">
+      <HintPath>..\..\..\..\Working\General\dll\SendFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ObjectDataReader.cs" />
+    <Compile Include="Controllers\Allcode_Controller.cs" />
+    <Compile Include="Controllers\Category_Controller.cs" />
+    <Compile Include="Controllers\Color_Controller.cs" />
+    <Compile Include="Common\CBO.cs" />
+    <Compile Include="Common\CommonData.cs" />
+    <Compile Include="Common\CommonFunc.cs" />
+    <Compile Include="Common\Null.cs" />
+    <Compile Include="Controllers\Customer_Controller.cs" />
+    <Compile Include="Helper\SQLHelper.cs" />
+    <Compile Include="NS_User_BL\FunctionsBL.cs" />
+    <Compile Include="NS_User_BL\Function_GroupBL.cs" />
+    <Compile Include="NS_User_BL\GroupUserBL.cs" />
+    <Compile Include="NS_User_BL\UserCoreBL.cs" />
+    <Compile Include="NS_User_BL\User_RightsBL.cs" />
+    <Compile Include="Controllers\Product_Controller.cs" />
+    <Compile Include="Controllers\Detail_Item_Controller.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controllers\Sale_Header_Controller.cs" />
+    <Compile Include="Controllers\Supplier_Controller.cs" />
+    <Compile Include="Controllers\ThuChi_Controller.cs" />
+    <Compile Include="NS_User_BL\User_Controller.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NangShopObj\NangShopObj.csproj">
+      <Project>{8119bb0f-8bb8-45f3-8043-17b0d99f5f46}</Project>
+      <Name>NangShopObj</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

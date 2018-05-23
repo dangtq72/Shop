@@ -1,0 +1,10 @@
+E:\Working Tem\Nang Shop\NangShopServer\NangShopServer\bin\Debug\NangShopServer.exe.config
+E:\Working Tem\Nang Shop\Nang Shop\NangShop\Run\Service\NangShopServer.exe.config
+E:\Working Tem\Nang Shop\Nang Shop\NangShop\Run\Service\NangShopServer.exe
+E:\Working Tem\Nang Shop\Nang Shop\NangShop\Run\Service\NangShopServer.pdb
+E:\Working Tem\Nang Shop\NangShopServer\NangShopServer\obj\Debug\NangShopServer.csprojResolveAssemblyReference.cache
+E:\Working Tem\Nang Shop\NangShopServer\NangShopServer\obj\Debug\NangShopServer.Form1.resources
+E:\Working Tem\Nang Shop\NangShopServer\NangShopServer\obj\Debug\NangShopServer.Properties.Resources.resources
+E:\Working Tem\Nang Shop\NangShopServer\NangShopServer\obj\Debug\NangShopServer.csproj.GenerateResource.Cache
+E:\Working Tem\Nang Shop\NangShopServer\NangShopServer\obj\Debug\NangShopServer.exe
+E:\Working Tem\Nang Shop\NangShopServer\NangShopServer\obj\Debug\NangShopServer.pdb

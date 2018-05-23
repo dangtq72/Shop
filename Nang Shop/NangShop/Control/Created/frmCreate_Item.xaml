@@ -1,0 +1,40 @@
+﻿<Window x:Class="NangShop.Control.Created.frmCreate_Item"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Thêm mới Ri" Height="220" Width="500" WindowStartupLocation="CenterScreen"
+        Style="{DynamicResource WindowFormStyle}" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Content="Số Ri" Grid.Column="0"  Grid.Row="1"  HorizontalAlignment="Right" Margin="0,0,3,0" VerticalAlignment="Center" />
+            <Label Content="Màu" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,3,0" VerticalAlignment="Center" />
+
+            <TextBox Name="txtCount" Grid.Column="1" Grid.Row="1"  Width="200" Margin="0,0,15,0" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="1" TextChanged="txtCount_TextChanged"/>
+            <ComboBox Name="cboColor" Grid.Column="1" Grid.Row="2"  Width="200" Margin="0,0,15,0" VerticalAlignment="Center" HorizontalAlignment="Left" TabIndex="2"/>
+            <Button Content="Thêm màu mới" Name="btnAddColor" Width="100" Grid.Column="1" Grid.Row="2" Margin="200,0,15,0" Click="btnAddColor_Click"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0" Style="{DynamicResource BottomGrid}">
+            <StackPanel Orientation="Horizontal" Name="grdBtn" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Content="Chấp nhận" Margin="0,0,0,0" Name="btnAccept" Click="btnAccept_Click" Width="75" TabIndex="4"/>
+                <Button Content="Hủy bỏ" Margin="5,0,0,0" Name="btnCancel" Click="btnCancel_Click" Width="75" TabIndex="5"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

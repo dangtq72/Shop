@@ -1,0 +1,77 @@
+﻿<ad:DockableContent x:Class="NangShop.Display.HoaDon_Display"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="Hóa đơn bán lẻ"  
+        xmlns:ad="clr-namespace:AvalonDock;assembly=AvalonDock" 
+        x:Name="frmSaleHeaderDisplay" Loaded="frmSaleHeaderDisplay_Loaded" KeyDown="frmSaleHeaderDisplay_KeyDown"
+        Height="420" Width="1024">
+    <ad:DockableContent.Resources>
+        <ContextMenu x:Key="Cmu" Background="#D5DCE6"  >
+            <MenuItem Header="In hóa đơn" InputGestureText="Print"  Foreground="Black" Click="btnPrint_Click"/>
+            <MenuItem Header="Kết xuất" InputGestureText="F3"  Foreground="Black" Click="btnExport_Click"/>
+            <MenuItem Header="Đổi hàng" InputGestureText="F4"  Foreground="Black" Click="btnChangeProduct_Click"/>
+        </ContextMenu>
+    </ad:DockableContent.Resources>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition />
+            <RowDefinition Height="35" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Background="#E1E1E1">
+
+            <Label Content="Số hóa đơn" Margin="5,0,0,0" HorizontalAlignment="Left"/>
+            <TextBox Name="txtSoHoaDon" Margin="5,0,0,0" Width="150" VerticalAlignment="Center" TabIndex="1"/>
+            
+            <Label Content="Tên khách hàng" Margin="5,0,0,0" HorizontalAlignment="Left"/>
+            <TextBox Name="txtCustomer_Name" Margin="5,0,0,0" Width="150" VerticalAlignment="Center" TabIndex="2"/>
+
+            <Label Content="Ngày bán từ" Margin="5,0,0,0" HorizontalAlignment="Left"/>
+            <DatePicker Name="dpSaleDate" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Width="100" HorizontalAlignment="Left" TabIndex="3"/>
+
+            <Label Content="Ngày bán đến" Margin="5,0,0,0" HorizontalAlignment="Left"/>
+            <DatePicker Name="dpSaleDateTo" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Width="100" HorizontalAlignment="Left" TabIndex="4"/>
+
+            
+            <Button Content="Tìm kiếm" Name="btnSearch" Click="btnSearch_Click" Margin="15,0,0,0" VerticalAlignment="Center" Width="90" TabIndex="5"/>
+            <Button Name="btnExport" Margin="5,0,0,0"  HorizontalAlignment="Center" VerticalAlignment="Center" Content="Kết xuất" Width="75" Click="btnExport_Click" TabIndex="6"/>
+        </StackPanel>
+
+        <DataGrid  Name="dgrSaleHeader" Grid.Row ="1"  AutoGenerateColumns="False" ContextMenu="{StaticResource Cmu}"
+                   LoadingRow="dgrSaleHeader_LoadingRow" PreviewKeyDown="dgrSaleHeader_PreviewKeyDown"
+                           CanUserAddRows="False" VerticalContentAlignment="Bottom">
+            <DataGrid.RowStyle>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <EventSetter Event="PreviewMouseDoubleClick" Handler="DoubleClick"/>
+                    <Style.Triggers>
+                        <Trigger Property="AlternationIndex" Value="0">
+                            <Setter Property="Background" Value="#FFEDEDED"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding SoHoaDon}" IsReadOnly="True" Header="Số hóa đơn" MinWidth="200"/>
+                <DataGridTextColumn Binding="{Binding Sale_Date,StringFormat=dd/MM/yyyy}" IsReadOnly="True" Header="Ngày bán" MinWidth="120"/>
+                <DataGridTextColumn Binding="{Binding Str_SalesType}" IsReadOnly="True" Header="Loại" MinWidth="120"/>
+                <DataGridTextColumn Binding="{Binding Customer_Name}" IsReadOnly="True" Header="Tên khách hàng" MinWidth="200"/>
+                <DataGridTextColumn Binding="{Binding Total_Amount,StringFormat=#\,##0}" IsReadOnly="True" Header="Tổng số tiền TT" MinWidth="120"/>
+                <DataGridTextColumn Binding="{Binding Discount,StringFormat=#\,##0}" IsReadOnly="True" Header="Tiền khuyến mại" MinWidth="120" />
+                <DataGridTextColumn Binding="{Binding UserName}" IsReadOnly="True" Header="Người lập hóa đơn" MinWidth="120" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Grid Grid.Row="2" Style="{DynamicResource BottomGrid}">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Name="btnChangeProduct" Margin="5,0,0,0"  HorizontalAlignment="Center" VerticalAlignment="Center" Content="Đổi hàng" Width="75" Click="btnChangeProduct_Click" TabIndex="7"/>
+                <Button Name="btnExport1" Margin="5,0,0,0"  HorizontalAlignment="Center" VerticalAlignment="Center" Content="Kết xuất" Width="75" Click="btnExport_Click" TabIndex="8"/>
+                <Button Name="btnPrint" Margin="5,0,0,0"  HorizontalAlignment="Center" VerticalAlignment="Center" Content="In hóa đơn" Width="75" Click="btnPrint_Click" TabIndex="9"/>
+                <Button Name="btnExit" Margin="5,0,0,0"  HorizontalAlignment="Center" VerticalAlignment="Center" Content="Thoát" Width="75" Click="btnExit_Click" TabIndex="10"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+    </ad:DockableContent>
+
